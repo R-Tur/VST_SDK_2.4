@@ -10,6 +10,13 @@ cmake ..
 make (or refer to cmake dir, if you are using Visual Studio)
 ```
 
+#How to include into your project 
+```
+add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/VST_SDK)
+...
+TARGET_LINK_LIBRARIES(${PROJECT_NAME} VST_SDK)
+```
+
 #Installing CMake 3.0 on Ubuntu
 ```bash
 sudo apt-get install software-properties-common
